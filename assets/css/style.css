@@ -1,0 +1,24 @@
+header {
+    background-image: linear-gradient(to right, blue, #1b1b96 ,#000080);
+    color: white;
+};
+#search-text{
+    font-weight: bolder;
+    font-size: x-large;
+};
+#search-btn{
+    color: white;
+};
+#display{
+    border-color: black;
+};
+#recent-cities{
+    list-style-type: none;
+};
+.daily{
+    font-size: large;
+};
+.data-list {
+    padding: 0;
+    line-height: 2;
+};
