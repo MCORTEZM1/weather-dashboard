@@ -271,8 +271,19 @@ function displayFiveDay(locationData) {
 function displayUv(uvData){
     // get uv data 
     const uvIndex = $('<span>');
-    $(uvIndex).addClass('badge bg-success');
-    $(uvIndex).text(uvData.current.uvi);
+    const indexU = uvData.current.uvi
+    $(uvIndex).text(indexU);
+    console.log(indexU)
+    if (indexU < 3){
+        $(uvIndex).addClass('badge bg-success');
+    }
+    else if ( 3 <= indexU && indexU <= 7) {
+        $(uvIndex).addClass('badge bg-warning text-dark');
+    }
+    else if (indexU >= 8) {
+        $(uvIndex).addClass('badge bg-danger')
+    };
+
 
     const uvIndexText = $('<span>');
     uvIndexText.text('UV Index: ');
